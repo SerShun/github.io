@@ -1,0 +1,83 @@
+.subscribe{
+    background: url(../img/subscribe__bg.png) no-repeat center / cover #eeecec;
+    min-height: clamp(40.625rem, 35.532rem + 25.46vw, 57.813rem);
+    max-width: 1439px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: clamp(1.25rem, -2.361rem + 18.06vw, 13.438rem);
+    padding-bottom: clamp(1.25rem, -1.157rem + 12.04vw, 9.375rem);
+    padding-left: clamp(1.25rem, -0.231rem + 7.41vw, 6.25rem);
+    padding-right: clamp(1.25rem, -0.231rem + 7.41vw, 6.25rem);
+    
+    
+    &__title {
+        font-family: Unna;
+        font-size: clamp(1.5rem, 0.978rem + 2.39vw, 3.125rem);
+        line-height: 74px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: #333333;
+        max-width: 428px;
+        text-align: center;
+        align-self: center;
+        
+    }
+
+    &__form{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    &__input{
+        padding: 21px 38px;
+        font-family: Montserrat;
+        font-size: clamp(0.75rem, 0.67rem + 0.37vw, 1rem);
+        line-height: 16px;
+        font-weight: 700;
+        letter-spacing: 0.015em;
+        color: #bdbdbd;
+        padding: 15px 39px;
+        border: 1.5px solid #b0b0b0;
+        
+    }
+
+    &__area{
+        height: 130px;
+        padding: 21px 38px;
+        resize: none;
+        border: 1.5px solid #b0b0b0;
+        font-family: Montserrat;
+        font-size: clamp(0.75rem, 0.67rem + 0.37vw, 1rem);
+        line-height: 16px;
+        font-weight: 700;
+        letter-spacing: 0.015em;
+        color: #bdbdbd;
+    }
+
+    &__btn {
+        width: 179px;
+        height: 44px;
+        background-color: #a3aa68;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-size: 16.1px;
+        line-height: 16px;
+        font-weight: 700;
+        letter-spacing: 0.015em;
+        color: #ffffff;
+        border: none;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+}
+
+
+
+

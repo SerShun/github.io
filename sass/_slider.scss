@@ -1,0 +1,47 @@
+
+.slider {
+    max-width: 1439px;
+    min-height: clamp(20rem, 9.259rem + 53.7vw, 56.25rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/video_bg.png) no-repeat center / cover;
+}
+
+img {
+    vertical-align: top;
+}
+
+.control {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.control__btn {
+    background-color: pink;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.pictures {
+    width: 70%;
+    margin: 50px 0 ;
+    overflow: hidden;
+}
+.slider__block {
+    display: flex;
+}
+
+.pic {
+    display: block;
+}
+
+.pic__img {
+    width: 100%;
+    object-fit: contain;
+}
+

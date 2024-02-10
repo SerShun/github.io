@@ -1,0 +1,25 @@
+.discount {
+    min-height: 266px;
+    background: url(../img/disc__bg2.png) no-repeat center / cover, url(../img/disc__bg.png) no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+&__title {
+    font-family: Unna;
+    font-size: clamp(1.5rem, -0.106rem + 7.34vw, 6.5rem);
+    line-height: 66px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #f6f6f9;
+}
+
+&__text {
+    font-family: Sacramento;
+    font-size: clamp(1.5rem, 0.547rem + 4.36vw, 4.469rem);
+    line-height: 1.2;
+    font-weight: 400;
+    color: #f6f6f9;
+}
+}

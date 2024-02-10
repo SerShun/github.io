@@ -1,0 +1,48 @@
+.bouquet{
+    background: url(../img/bouquet__bg1.png) no-repeat left / contain, url(../img/image.png) no-repeat center / cover ;
+    min-height: clamp(22.5rem, 12.037rem + 52.31vw, 57.813rem);
+    max-width: 1439px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+
+    padding-top: clamp(1.25rem, -2.769rem + 20.09vw, 14.813rem);
+    padding-bottom: clamp(1.25rem, -3.194rem + 22.22vw, 16.25rem);
+    padding-left: clamp(1.25rem, -0.231rem + 7.41vw, 6.25rem);
+    padding-right: clamp(1.25rem, -0.231rem + 7.41vw, 6.25rem);
+    
+
+    &__title {
+        font-family: Sacramento;
+        font-size: clamp(1.75rem, 1.048rem + 3.21vw, 3.938rem);
+        line-height: 1.2;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: clamp(0.875rem, 0.735rem + 0.64vw, 1.313rem);
+        line-height: 33px;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        color: #333333;
+        max-width: 400px;
+        margin-bottom: clamp(0.625rem, -0.301rem + 4.63vw, 3.75rem);
+    }
+
+    &__btn {
+        width: 152px;
+        height: 46px;
+        background-color: #333333;
+        border-radius: 23px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #efd0ca;
+    }
+}

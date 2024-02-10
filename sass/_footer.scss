@@ -1,0 +1,108 @@
+footer {
+    min-height: 652px;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: clamp(1.25rem, -1.509rem + 13.8vw, 10.563rem);
+    padding-bottom: clamp(1.25rem, 0.231rem + 5.09vw, 4.688rem);
+    background-color:  #424242;
+    padding-left: clamp(1.25rem, -1.046rem + 11.48vw, 9rem);
+    padding-right: clamp(1.25rem, -1.046rem + 11.48vw, 9rem);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.list__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.history{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__title{
+        font-family: Unna;
+        font-size: clamp(1.5rem, 1.219rem + 1.28vw, 2.375rem);
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        margin-bottom: 39px;
+        
+    }
+
+    &__list {
+        font-family: Montserrat;
+        font-size: clamp(0.875rem, 0.674rem + 0.92vw, 1.5rem);
+        line-height: 44px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        list-style: none;
+    }
+}
+
+.recomendation{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        font-family: Unna;
+        font-size: clamp(1.5rem, 1.219rem + 1.28vw, 2.375rem);
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        margin-bottom: 39px;
+    }
+
+    &__list {
+        font-family: Montserrat;
+        font-size: clamp(0.875rem, 0.674rem + 0.92vw, 1.5rem);
+        line-height: 44px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        list-style: none;
+    }
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    max-width: 500px;
+
+
+    &__header{
+        font-family: Sacramento;
+        font-size: 65.7px;
+        line-height: 87px;
+        font-weight: 400;
+        color: #efd0ca;
+    }
+
+    &__items{
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    &__svg{
+        width: 70px;
+        height: 70px;
+    }
+}

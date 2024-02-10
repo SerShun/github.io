@@ -1,0 +1,48 @@
+.birthday{
+    background: url(../img/birthday__bg2.png) no-repeat left / cover, url(../img/birthday__bg.png) no-repeat center / cover;
+    min-height: clamp(35rem, 28.704rem + 31.48vw, 56.25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+    padding-top: clamp(0.625rem, -4.968rem + 27.96vw, 19.5rem);
+    padding-bottom: clamp(1.25rem, -2.231rem + 17.41vw, 13rem);
+    padding-left: clamp(1.25rem, -0.454rem + 8.52vw, 7rem);
+    padding-right: clamp(1.25rem, -0.454rem + 8.52vw, 7rem);
+
+
+    
+
+    &__title {
+        font-family: Sacramento;
+        font-size: clamp(2rem, 1.378rem + 2.84vw, 3.938rem);
+        line-height: 1.2;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: clamp(0.875rem, 0.735rem + 0.64vw, 1.313rem);
+        line-height: 33px;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        color: #333333;
+        max-width: 400px;
+        margin-bottom: 57px;
+    }
+
+    &__btn {
+        width: 152px;
+        height: 46px;
+        background-color: #333333;
+        border-radius: 23px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #efd0ca;
+    }
+
+}

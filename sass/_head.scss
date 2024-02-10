@@ -1,0 +1,208 @@
+.head {
+    min-height: clamp(31.25rem, 23.843rem + 37.04vw, 56.25rem);
+    padding-top: clamp(1.25rem, 0.602rem + 3.24vw, 3.438rem);
+    padding-bottom: clamp(0.938rem, -1.563rem + 12.5vw, 9.375rem);
+    padding-left: clamp(1.25rem, 0.602rem + 3.24vw, 3.438rem);
+    padding-right: clamp(1.25rem, 0.602rem + 3.24vw, 3.438rem);
+    background: url(../img/scr1_bg2.png) no-repeat center / cover, url(../img/scr1_bg.png) no-repeat center / cover;
+  
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1326px;
+    min-height: 72px;
+    background-color: #333333;
+    border-radius: 36px;
+    margin-bottom: clamp(1.25rem, -1.713rem + 14.81vw, 11.25rem);
+    padding: 10px;
+  }
+
+  &__logo {
+  
+    font-family: Montserrat;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: Unna;
+    font-size: clamp(2rem, 1.378rem + 2.84vw, 3.938rem);
+    line-height: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #333333;
+    max-width: 424px;
+    margin-bottom: 39px;
+  }
+
+  &__span {
+    font-family: Sacramento;
+    font-size: clamp(2rem, 1.378rem + 2.84vw, 3.938rem);
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    display: block;
+    margin-bottom: 26px;
+    
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: clamp(0.875rem, 0.735rem + 0.64vw, 1.313rem);
+    line-height: 29px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    color: #333333;
+    max-width: 424px;
+    margin-bottom: 39px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__button {
+    width: 152px;
+    height: 46px;
+    background-color: #e08e9c;
+    border-radius: 23px;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+    
+  &__link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #333333;
+    padding: 16px 34px;
+    border-radius: 23px;
+    background-color: transparent;
+
+  }
+
+  &__link:hover {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 16px 34px;
+    color: #ffffff;
+    background-color: #e08e9c;
+    border-radius: 23px;
+  }
+
+  &__burger{
+    display: none;
+    cursor: pointer;
+  }
+
+}
+  
+nav{
+  display: flex;
+  align-items: center;
+  gap: 112px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 112px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 16.7px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+
+  &__link:hover {
+    color: #e08e9c;
+    text-decoration: underline;
+  }
+
+}
+
+.btn {
+  flex: 0 0 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  align-items: center;
+}
+.btn__line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+.btn__line::after, .btn__line::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+}
+.btn__line::after {
+  bottom: 0;
+}
+.btn__line::before {
+  top: 0;
+}
+.active.menu__list {
+  left: 0;
+  
+}
+.active .btn__line {
+  background: transparent;
+}
+.active .btn__line::after {
+  transform: rotate(45deg);
+  bottom: 50%;
+}
+.active .btn__line::before {
+  transform: rotate(-45deg);
+  top: 50%;
+  margin: -2px 0 0;
+}
